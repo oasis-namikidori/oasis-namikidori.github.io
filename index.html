@@ -39,14 +39,14 @@
 
 <!-- メインビジュアル -->
 <section class="w-full min-h-[400px] bg-white flex flex-col items-center justify-center text-center px-8 pt-16 md:pt-24">
-  <h1 class="flex flex-col items-center gap-6 mt-[140px] md:mt-12">
+  <h1 class="flex flex-col items-center gap-6 mt-[140px] md:mt-15">
     <!-- 商店街名のSVG（見出しロゴ） -->
 <img src="img/top_namiki_title.svg" alt="オアシス並木通り商店街"
      class="w-[30vw] md:w-[180px] h-auto mb-4 translate-x-12 md:translate-x-24">
 
     <!-- イラスト -->
     <img src="img/top_namiki.svg" alt="商店街全景"
-     class="w-[90vw] md:w-[min(90vw,800px)] h-auto mb-40 md:mb-16">
+     class="w-[90vw] md:w-[min(90vw,800px)] h-auto mb-40 md:mb-40">
   </h1>
 </section>
 
@@ -57,7 +57,13 @@
 
   <!-- 出演者紹介 -->
 <section id="shops" class="scroll-mt-20 pt-10 md:pt-20 pb-20 px-6 text-center">
-    <h2 class="text-2xl font-light mb-8 text-[#24471d]">店舗紹介</h2>
+  <!-- 店舗紹介の見出しの下に画像を置く -->
+
+  <h2 class="text-xl md:text-2xl font-light text-[#24471d] mt-[30px] md:mt-10 mb-[20px] md:mb-10">
+  店舗紹介
+</h2>
+<img src="img/ill_shops.gif" alt="" class="mx-auto mb-[40px] md:mb-10 w-48">
+
     <div class="grid md:grid-cols-3 gap-5 max-w-6xl mx-auto">
       <div class="bg-white border border-[#24471d] p-6 rounded-xl">
 
@@ -82,7 +88,13 @@
 
 <!-- アクセス -->
 <section id="access" class="scroll-mt-20 pt-10 md:pt-20 pb-10 px-6 text-center">
-  <h2 class="text-2xl font-light mb-2 text-[#24471d]">アクセス</h2>
+  <div class="flex items-center justify-center gap-4 mb-4">
+  <img src="img/ill_access1.gif" alt=""
+     class="w-[75px] md:w-[94px] h-auto mt-5 md:mt-[30px]">
+  <h2 class="text-xl md:text-2xl font-light text-[#24471d] mt-[30px] md:mt-10 mb-[0px] md:mb-0">アクセス</h2>
+  <img src="img/ill_access2.gif" alt=""
+     class="w-[75px] md:w-[93px] h-auto mt-8 md:mt-[45px]">
+</div>
   <p class="text-sm md:text-base leading-loose max-w-2xl mx-auto mb-0 md:mb-2">
     大分県大分市中央町4-1
   </p>
