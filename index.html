@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>オアシス並木通り商店街</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="text-sm leading-loose bg-white text-gray-800 font-sans" style="font-family: 'Noto Sans JP', sans-serif;">
+
+  <!-- ヘッダー -->
+<header class="fixed top-0 left-0 w-full h-20 bg-white z-50 px-6
+               flex items-center justify-between relative overflow-visible">
+  <!-- 左：PCナビ -->
+  <nav class="hidden md:flex gap-6">
+    <a href="#shops"  class="text-[#24471d] hover:underline">店舗紹介</a>
+    <a href="#access" class="text-[#24471d] hover:underline">アクセス</a>
+  </nav>
+
+  <!-- 右：ハンバーガー -->
+  <button id="menu-toggle" class="md:hidden text-3xl cursor-pointer" aria-label="Open menu">≡</button>
+
+</header>
+
+
+<nav id="mobile-menu"
+  class="md:hidden fixed top-20 w-full bg-white/90 px-8 py-4 space-y-2
+         transition-all duration-300 ease-out transform scale-95 opacity-0 pointer-events-none z-40">
+  <a href="#shops" class="block text-[#24471d] text-base">店舗紹介</a>
+  <a href="#access" class="block text-[#24471d] text-base">アクセス</a>
+</nav>
+
+<!-- メインビジュアル -->
+<section class="w-full min-h-[400px] bg-white flex flex-col items-center justify-center text-center px-8 pt-16 md:pt-24">
+  <h1 class="flex flex-col items-center gap-6 mt-6 md:mt-12">
+    <!-- 商店街名のSVG（見出しロゴ） -->
+<img src="img/top_namiki_title.svg" alt="オアシス並木通り商店街"
+     class="w-[30vw] md:w-[180px] h-auto mb-4 translate-x-12 md:translate-x-24">
+
+    <!-- イラスト -->
+    <img src="img/top_namiki.svg" alt="商店街全景"
+     class="w-[90vw] md:w-[min(90vw,800px)] h-auto mb-20 md:mb-16">
+  </h1>
+</section>
+
+
+
+
+
+
+  <!-- 出演者紹介 -->
+<section id="shops" class="scroll-mt-20 pt-10 md:pt-20 pb-20 px-6 text-center">
+    <h2 class="text-2xl font-light mb-8 text-[#24471d]">店舗紹介</h2>
+    <div class="grid md:grid-cols-3 gap-5 max-w-6xl mx-auto">
+      <div class="bg-white border border-[#24471d] p-6 rounded-xl">
+
+        <h3 class="text-base font-semibold mb-2">〇〇〇〇〇〇〇〇〇〇</h3>
+        <p>〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎</p>
+      </div>
+      <div class="bg-white border border-[#24471d] p-6 rounded-xl">
+
+        <h3 class="text-base font-semibold mb-2">〇〇〇〇〇〇〇〇〇〇</h3>
+        <p>〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎</p>
+      </div>
+      <div class="bg-white border border-[#24471d] p-6 rounded-xl">
+        <h3 class="text-base font-semibold mb-2">〇〇〇〇〇〇〇〇〇〇</h3>
+        <p>〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎</p>
+      </div>
+     </div>
+    </div>
+
+    
+    </div>
+  </section>
+
+<!-- アクセス -->
+<section id="access" class="scroll-mt-20 pt-10 md:pt-20 pb-10 px-6 text-center">
+  <h2 class="text-2xl font-light mb-2 text-[#24471d]">アクセス</h2>
+  <p class="text-sm md:text-base leading-loose max-w-2xl mx-auto mb-0 md:mb-2">
+    大分県大分市中央町4-1
+  </p>
+</section>
+
+<!-- 地図 -->
+<div class="w-full bg-gray-200 flex items-center justify-center mt-0 md:mt-4">
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d632.2615649424743!2d131.60324142528646!3d33.237775442036465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDE0JzE2LjIiTiAxMzHCsDM2JzExLjQiRQ!5e0!3m2!1sja!2sjp!4v1755590403105!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+  <!-- フッター -->
+<footer class="scroll-mt-20 py-8 bg-white text-center text-sm text-[#24471d] border-t border-[#24471d]">
+  &copy;2025 オアシス並木通り商店街 All rights reserved.
+</footer>
+
+<a href="#" id="backToTop"
+   class="fixed bottom-4 right-4 w-12 h-12 bg-[#FFFFFF] text-[#24471d] text-xl
+          flex items-center justify-center text-center leading-none
+          rounded-full border border-[#24471d] hover:bg-[#f5f5f5] z-50">
+  ↑
+</a>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuLinks = mobileMenu.querySelectorAll('a');
+  const backToTop = document.getElementById('backToTop');
+
+  // スマホメニューのフェードアニメーション表示切り替え
+  menuToggle.addEventListener('click', () => {
+    const isVisible = mobileMenu.classList.contains('opacity-100');
+
+    if (isVisible) {
+      mobileMenu.classList.remove('opacity-100', 'scale-100');
+      mobileMenu.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+    } else {
+      mobileMenu.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+      mobileMenu.classList.add('opacity-100', 'scale-100');
+    }
+  });
+
+  // ページ内リンクでスクロール＋メニューを閉じる
+  menuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').replace('#', '');
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const headerOffset = 80;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+
+      // メニューをフェードアウト
+      mobileMenu.classList.remove('opacity-100', 'scale-100');
+      mobileMenu.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+    });
+  });
+
+  // トップへ戻るボタンの表示切り替え
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.remove('hidden');
+    } else {
+      backToTop.classList.add('hidden');
+    }
+  });
+});
+</script>
+</body>
+</html>
