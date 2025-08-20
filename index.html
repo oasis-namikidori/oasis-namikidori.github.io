@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>オアシス並木通り商店街</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html {
@@ -13,15 +16,16 @@
     }
   </style>
 </head>
-<body class="text-sm leading-loose bg-white text-gray-800 font-sans" style="font-family: 'Noto Sans JP', sans-serif;">
+<body class="text-sm text-[#24471d] leading-loose bg-white font-sans" style="font-family: 'Noto Sans JP', sans-serif;">
 
   <!-- ヘッダー -->
 <header class="fixed top-0 left-0 w-full h-20 bg-white z-50 px-6
                flex items-center justify-between relative overflow-visible">
   <!-- 左：PCナビ -->
   <nav class="hidden md:flex gap-6">
-    <a href="#shops"  class="text-[#24471d] hover:underline">店舗紹介</a>
-    <a href="#access" class="text-[#24471d] hover:underline">アクセス</a>
+    <a href="#news"  class="hover:underline">お知らせ</a>
+    <a href="#shops"  class="hover:underline">店舗紹介</a>
+    <a href="#access" class="hover:underline">アクセス</a>
   </nav>
 
   <!-- 右：ハンバーガー -->
@@ -33,8 +37,9 @@
 <nav id="mobile-menu"
   class="md:hidden fixed top-20 w-full bg-white/90 px-8 py-4 space-y-2
          transition-all duration-300 ease-out transform scale-95 opacity-0 pointer-events-none z-40">
-  <a href="#shops" class="block text-[#24471d] text-base">店舗紹介</a>
-  <a href="#access" class="block text-[#24471d] text-base">アクセス</a>
+  <a href="#news" class="block text-base">お知らせ</a>
+  <a href="#shops" class="block text-base">店舗紹介</a>
+  <a href="#access" class="block text-base">アクセス</a>
 </nav>
 
 <!-- メインビジュアル -->
@@ -53,16 +58,34 @@
 
 
 
+  <!-- お知らせ -->
+<section id="news" class="scroll-mt-20 pt-10 md:pt-20 pb-8 md:pb-12 px-6 text-center">
+  <div class="border-t border-b border-[#24471d] py-6 bg-gray-50" style="background-color: #f6f8fa;">
+    <div class="flex items-center justify-center gap-3 md:gap-6">
+      <img src="img/ill_shops.png" alt="" class="w-20 h-auto md:w-32 mt-2 md:mt-3">
+      <h2 class="text-lg md:text-2xl tracking-wider text-[#24471d] pt-3 md:pt-3 pb-2 md:pb-2">
+        お知らせ
+      </h2>
+      <img src="img/ill_shops.png" alt="" class="w-20 h-auto md:w-32 mt-2 md:mt-3">
+    </div>
 
+    <p class="text-center text-base md:text-lg mt-4 mb-0 pb-2 md:pb-3">
+      2025年11月23日（日・祝）に商店街主催のイベント<br class="block md:hidden">
+      「<a href="https://oasis-namikidori.github.io/osh2025/"
+         class="text-[#24471d] underline hover:no-underline"
+         target="_blank" rel="noopener">
+        OASIS: STREET HARVEST 2025
+      </a>」を開催いたします。  
+    </p>
+  </div>
+</section>
 
-  <!-- 出演者紹介 -->
-<section id="shops" class="scroll-mt-20 pt-10 md:pt-20 pb-20 px-6 text-center">
+  <!-- 店舗紹介 -->
+<section id="shops" class="scroll-mt-20 pt-5 md:pt-10 pb-20 px-6 text-center">
   <!-- 店舗紹介の見出しの下に画像を置く -->
-
-  <h2 class="text-lg md:text-2xl tracking-wider text-[#24471d] mt-[30px] md:mt-10 mb-[20px] md:mb-10">
+  <h2 class="text-lg md:text-2xl tracking-wider mt-[20px] md:mt-5 mb-[20px] md:mb-10">
   店舗紹介
 </h2>
-<img src="img/ill_shops.gif" alt="" class="mx-auto mb-[40px] md:mb-10 w-48">
 
     <div class="grid md:grid-cols-3 gap-5 max-w-6xl mx-auto">
       <div class="bg-white border border-[#24471d] p-6 rounded-xl">
@@ -71,7 +94,7 @@
      <h3 class="text-base  text-left font-semibold mb-2">〇〇〇〇〇〇〇〇〇〇</h3>
     <!-- 本文と画像を横並び -->
     <div class="flex items-start gap-4">
-      <p class="flex-1 text-left">
+      <p class="flex-1 text-left leading-loose">
         〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎
       </p>
       <img src="img/sample.png" alt="サンプル" class="w-24 h-auto rounded-lg">
@@ -84,7 +107,7 @@
      <h3 class="text-base  text-left font-semibold mb-2">〇〇〇〇〇〇〇〇〇〇</h3>
     <!-- 本文と画像を横並び -->
     <div class="flex items-start gap-4">
-      <p class="flex-1 text-left">
+      <p class="flex-1 text-left leading-loose">
         〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎
       </p>
       <img src="img/sample.png" alt="サンプル" class="w-24 h-auto rounded-lg">
@@ -96,7 +119,7 @@
      <h3 class="text-base  text-left font-semibold mb-2">〇〇〇〇〇〇〇〇〇〇</h3>
     <!-- 本文と画像を横並び -->
     <div class="flex items-start gap-4">
-      <p class="flex-1 text-left">
+      <p class="flex-1 text-left leading-loose">
         〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎
       </p>
       <img src="img/sample.png" alt="サンプル" class="w-24 h-auto rounded-lg">
@@ -132,12 +155,12 @@
 </div>
 
   <!-- フッター -->
-<footer class="scroll-mt-20 py-8 bg-white text-center text-sm text-[#24471d] border-t border-[#24471d]">
+<footer class="scroll-mt-20 py-8 bg-white text-center text-sm border-t border-[#24471d]">
   &copy;2025 オアシス並木通り商店街 All rights reserved.
 </footer>
 
 <a href="#" id="backToTop"
-   class="fixed bottom-4 right-4 w-12 h-12 bg-[#FFFFFF] text-[#24471d] text-xl
+   class="fixed bottom-4 right-4 w-12 h-12 bg-[#FFFFFF] text-xl
           flex items-center justify-center text-center leading-none
           rounded-full border border-[#24471d] hover:bg-[#f5f5f5] z-50">
   ↑
