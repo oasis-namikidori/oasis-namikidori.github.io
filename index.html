@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>オアシス並木通り商店街</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="icon" href="img/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-ons-180.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=3">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png?v=3">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html {
@@ -70,7 +70,7 @@
     </div>
 
    <p class="text-center text-sm md:text-lg mt-4 mb-0 pb-4 md:pb-3 mx-auto"> 
-  2025年11月23日（日・祝）に商店街主催のイベント
+  2025年11月23日（日祝）に商店街主催のイベント
   <!-- スマホ用：必ず改行 -->
   <br class="block md:hidden">
   <!-- タブレット用：必ず改行 -->
@@ -95,42 +95,39 @@
 <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5 max-w-6xl mx-auto">
       <div class="bg-white border border-[#24471d] p-6 rounded-xl">
 
-     <!-- タイトル -->
-     <h3 class="text-base  text-left font-semibold mb-2">〇〇〇〇〇〇〇〇〇〇</h3>
-    <!-- 本文と画像を横並び -->
-    <div class="flex items-start gap-4">
-      <p class="flex-1 text-left leading-loose">
-        〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎
-      </p>
-      <img src="img/sample.png" alt="サンプル" class="w-24 h-auto rounded-lg">
-    </div>
-     </div>
-      
-     
-     <div class="bg-white border border-[#24471d] p-6 rounded-xl">
-     <!-- タイトル -->
-     <h3 class="text-base  text-left font-semibold mb-2">〇〇〇〇〇〇〇〇〇〇</h3>
-    <!-- 本文と画像を横並び -->
-    <div class="flex items-start gap-4">
-      <p class="flex-1 text-left leading-loose">
-        〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎
-      </p>
-      <img src="img/sample.png" alt="サンプル" class="w-24 h-auto rounded-lg">
-    </div>
-     </div>
-     
-     <div class="bg-white border border-[#24471d] p-6 rounded-xl">
-     <!-- タイトル -->
-     <h3 class="text-base  text-left font-semibold mb-2">〇〇〇〇〇〇〇〇〇〇</h3>
-    <!-- 本文と画像を横並び -->
-    <div class="flex items-start gap-4">
-      <p class="flex-1 text-left leading-loose">
-        〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎〇〇〇〇〇〇〇〇〇◎
-      </p>
-      <img src="img/sample.png" alt="サンプル" class="w-24 h-auto rounded-lg">
-    </div>
-     </div>
+<div class="grid grid-cols-[1fr_auto] items-start gap-x-4 gap-y-0">
+  <!-- col1 row1: タイトル -->
+  <h3 class="text-base text-left font-semibold leading-tight mb-0 col-start-1 row-start-1">
+    minimal skateboards<br>
+    <span class="text-xs font-normal mb-0">ミニマルスケートボード</span>
+  </h3>
 
+  <!-- col1 row2: 本文 + アイコン -->
+  <div class="col-start-1 row-start-2">
+    <p class="flex-1 text-left mt-0 leading-relaxed mt-2 mb-4">
+      スケート用品からアパレルまで約1,000点、初心者から上級者まで楽しめる充実の品揃え。
+    </p>
+
+    <!-- アイコン横並び -->
+    <div class="mt-2 flex items-center gap-3">
+      <a href="https://www.instagram.com/cafe.minimal.skateboards?utm_source=ig_web_button_share_sheet&igsh=MXZpZ2xrN2J2dzE1bA==" 
+         target="_blank" aria-label="Instagram" class="inline-flex">
+        <img src="img/ig_c.png" alt="Instagram"
+             class="h-6 w-6 md:h-8 md:w-8 hover:opacity-80 transition-opacity duration-200">
+      </a>
+      <a href="https://minimalskate.com/" 
+         target="_blank" aria-label="公式サイト" class="inline-flex">
+        <img src="img/weblink.svg" alt="公式サイト"
+             class="h-6 w-6 md:h-8 md:w-8 hover:opacity-80 transition-opacity duration-200">
+      </a>
+    </div>
+  </div>
+
+  <!-- col2 row1-2: ロゴ画像（本文の上端に揃える） -->
+  <div class="col-start-2 row-start-1 row-span-2 self-start">
+ <img src="img/minimal-skateboards_logo.jpg" alt="サンプル" 
+         class="w-32 h-auto border border-gray-400">  </div>
+</div>
 
     </div>
   </section>
