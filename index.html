@@ -42,18 +42,26 @@
     <a href="#access" class="hover:underline">アクセス</a>
   </nav>
 
-  <!-- 右：ハンバーガー -->
-  <button id="menu-toggle" class="md:hidden text-5xl cursor-pointer" aria-label="Open menu">≡</button>
+<!-- スマホだけ：左上に常時表示 -->
+<button id="menu-toggle"
+  class="md:hidden fixed left-4 top-5 z-[60] bg-white rounded-full w-12 h-12
+         flex flex-col items-center justify-center gap-1.5 shadow border border-[#24471d]/20"
+  aria-label="Open menu" aria-expanded="false">
+  <span class="sr-only">Open menu</span>
+  <span class="block w-6 h-0.5 bg-[#24471d] rounded"></span>
+  <span class="block w-6 h-0.5 bg-[#24471d] rounded"></span>
+  <span class="block w-6 h-0.5 bg-[#24471d] rounded"></span>
+</button>
 
 </header>
 
 
 <nav id="mobile-menu"
-  class="md:hidden fixed top-20 w-full bg-white/90 px-8 py-4 space-y-5
+  class="md:hidden fixed inset-y-0 left-0 w-50 max-w-[80vw] bg-white/90 px-8 py-4 pt-20
          transition-all duration-300 ease-out transform scale-95 opacity-0 pointer-events-none z-40">
-  <a href="#news" class="block text-lg">お知らせ</a>
-  <a href="#shops" class="block text-lg">店舗紹介</a>
-  <a href="#access" class="block text-lg">アクセス</a>
+  <a href="#news" class="block text-lg  leading-[3rem]">お知らせ</a>
+  <a href="#shops" class="block text-lg  leading-[3rem]">店舗紹介</a>
+  <a href="#access" class="block text-lg  leading-[3rem]">アクセス</a>
 </nav>
 
 <!-- メインビジュアル -->
